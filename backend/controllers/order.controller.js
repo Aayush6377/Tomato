@@ -40,7 +40,7 @@ export const placeOrder = async (req,res,next) => {
         const userId = req.userId;
         const check = await checkUserId(userId);
         const stripe = new Stripe(process.env.STRIPE_KEY);
-        const frontend_url = process.env.FRONTEND;
+        const frontend_url = "https://tomato-feoq.onrender.com";
 
         if (!check.valid){
             throw new Error(check.message);
