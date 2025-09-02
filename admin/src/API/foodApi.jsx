@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const url = "http://localhost:3000";
+export const url = "https://tomato-backend-6jff.onrender.com";
 
 export const api = axios.create({
     baseURL: url
